@@ -11,7 +11,7 @@ void write_speed_test(const char *file_path) {
         return;
     }
 
-    const size_t buffer_size = 1024 * 1024; // 1MB
+    const size_t buffer_size = 1024 * 1024;
     char *buffer = malloc(buffer_size);
     if (!buffer) {
         perror("Memory allocation failed");
